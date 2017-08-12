@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.example.minhkhai.fuiball.dangnhap.DangKy">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Đăng ký tài khoản"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/edtDKTaiKhoan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="24dp"
+        android:hint="Tên đăng nhập"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:met_iconLeft="@drawable/ic_user"
+        app:met_iconPadding="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="24dp" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/edtDKMatKhau"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="7dp"
+        android:hint="Mật khẩu"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtDKTaiKhoan"
+        android:inputType="textPassword"
+        app:met_iconLeft="@drawable/ic_password"
+        app:met_iconPadding="0dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="24dp" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/edtDKXacNhanMatKhau"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="8dp"
+        android:hint="Xác nhận mật khẩu"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtDKMatKhau"
+        android:inputType="textPassword"
+        app:met_iconLeft="@drawable/ic_password"
+        app:met_iconPadding="0dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="24dp" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="24dp"
+        android:hint="Họ tên"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:met_iconLeft="@drawable/ic_name"
+        app:met_iconPadding="0dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintTop_toBottomOf="@+id/edtDKXacNhanMatKhau"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:id="@+id/edtDKTen"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="24dp" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/edtDKDienThoai"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="8dp"
+        android:hint="Số điện thoại"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtDKTen"
+        app:met_iconLeft="@drawable/ic_phone"
+        app:met_iconPadding="0dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="24dp" />
+
+    <Button
+        android:id="@+id/btnDKDangKy"
+        android:layout_width="243dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_dang_nhap"
+        android:textColor="@color/colorWhite"
+        android:text="Đăng ký"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtDKDienThoai"
+        app:layout_constraintHorizontal_bias="0.503" />
+
+
+</android.support.constraint.ConstraintLayout>

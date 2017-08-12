@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tvTenSan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/edtNgayDat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:met_iconLeft="@drawable/ic_date"
+        android:layout_below="@+id/tvTenSan"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/edtBatDau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edtNgayDat"
+        app:met_iconLeft="@drawable/ic_in" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/edtKetThuc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edtBatDau"
+        app:met_iconLeft="@drawable/ic_out"/>
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/btnDat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtKetThuc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:text="Đặt sân"
+        android:textColor="@color/colorWhite"
+        app:buttonColor="@color/colorPrimary"
+        app:cornerRadius="0dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/edtNgay"
+        app:layout_constraintRight_toRightOf="parent"
+        app:shadowColor="@color/colorPrimary" />
+
+</RelativeLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.sackcentury.shinebuttonlib.ShineButton
+                android:id="@+id/sbtnLike"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@android:color/darker_gray"
+                app:allow_random_color="false"
+                app:btn_color="@android:color/darker_gray"
+                app:btn_fill_color="@color/colorPrimary"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:siShape="@raw/like"
+                app:enable_flashing="true"
+                app:big_shine_color="#FF6666"
+                app:click_animation_duration="200"
+                app:shine_animation_duration="1500"
+                app:shine_turn_angle="10"
+                app:small_shine_offset_angle="20"
+                app:shine_distance_multiple="1.5"
+                app:small_shine_color="#CC9999"
+                app:shine_count="8"/>
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintLeft_toLeftOf="@+id/imageView3"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3"
+                app:srcCompat="@drawable/ic_phone_large"
+                android:layout_marginStart="8dp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:srcCompat="@drawable/ic_location_large"
+                android:layout_marginLeft="16dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvChiTietTenSan"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="44dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintLeft_toLeftOf="@+id/imageView3"
+                app:layout_constraintTop_toBottomOf="@+id/imageView6"
+                app:srcCompat="@drawable/ic_pitch_large"
+                android:layout_marginStart="8dp" />
+
+            <TextView
+                android:id="@+id/tvChiTietTenSan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginStart="16dp" />
+
+            <TextView
+                android:id="@+id/tvChiTietDiaChi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="TextView"
+                android:textColor="@color/colorPrimary"
+                app:layout_constraintLeft_toRightOf="@+id/imageView3"
+                app:layout_constraintTop_toTopOf="@+id/imageView3"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/tvChiTietDienThoai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="22dp"
+                android:text="TextView"
+                android:textColor="@color/colorPrimary"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView6"
+                app:layout_constraintLeft_toLeftOf="@+id/tvChiTietDiaChi"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/tvChiTietLoaiSan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:text="TextView"
+                android:textColor="@color/colorPrimary"
+                app:layout_constraintLeft_toLeftOf="@+id/tvChiTietDienThoai"
+                app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+            <info.hoang8f.widget.FButton
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="Bản đồ"
+                android:layout_marginTop="48dp"
+                app:layout_constraintTop_toBottomOf="@+id/imageView7"
+                android:id="@+id/btnBanDo"
+                app:cornerRadius="0dp"
+                android:textColor="@color/white"
+                app:buttonColor="@color/colorPrimary"
+                app:shadowColor="@color/colorPrimary"
+                app:shadowEnabled="true"
+                app:shadowHeight="5dp"
+                android:layout_marginLeft="24dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="16dp" />
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btnGoiDien"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="Gọi điện"
+                android:textColor="@color/white"
+                app:buttonColor="@color/colorPrimary"
+                app:cornerRadius="0dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:shadowColor="@color/colorPrimary"
+                app:shadowEnabled="true"
+                app:shadowHeight="5dp"
+                android:layout_marginTop="48dp"
+                app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

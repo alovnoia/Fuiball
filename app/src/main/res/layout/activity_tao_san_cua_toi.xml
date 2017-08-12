@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.minhkhai.fuiball.sancuatoi.TaoSanCuaToi"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thông tin sân"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:met_iconLeft="@drawable/ic_name"
+        app:met_textColor="@color/colorPrimary"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:id="@+id/edtThemTenSan"
+        android:hint=" Tên sân"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:met_iconLeft="@drawable/ic_phone"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:id="@+id/edtThemSDT"
+        android:hint=" Điện thoại"
+        app:met_textColor="@color/colorPrimary"
+        android:layout_below="@+id/edtThemTenSan"
+        android:layout_alignParentStart="true" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:met_iconLeft="@drawable/ic_pitch_small"
+        app:met_textColor="@color/colorPrimary"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:layout_below="@+id/edtThemSDT"
+        android:layout_alignParentStart="true"
+        android:hint=" Loại sân"
+        android:id="@+id/edtThemLoaiSan" />
+
+    <Spinner
+        android:id="@+id/spThemThanhPho"
+        android:layout_width="185dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edtThemLoaiSan" />
+
+    <Spinner
+        android:id="@+id/spThemKhuVuc"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/edtThemLoaiSan"
+        android:layout_toEndOf="@+id/spThemThanhPho" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:met_iconLeft="@drawable/ic_address"
+        app:met_textColor="@color/colorPrimary"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:id="@+id/edtThemDiaChi"
+        android:hint=" Địa chỉ"
+        android:layout_below="@+id/spThemThanhPho"
+        android:layout_alignParentStart="true" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/edtThemToaDo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edtThemDiaChi"
+        android:hint="Tọa độ"
+        app:met_textColor="@color/colorPrimary"
+        app:met_iconLeft="@drawable/ic_location_black" />
+
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/fabTaoSan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:src="@drawable/ic_save"
+        app:fab_colorNormal="@color/colorPrimary"
+        app:fab_colorPressed="@color/colorPrimaryPress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

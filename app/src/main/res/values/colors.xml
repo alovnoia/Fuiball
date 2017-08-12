@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#309f1e</color>
+    <color name="colorPrimaryDark">#1f740b</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#fff</color>
+    <color name="colorBlue">#4c65d4</color>
+    <color name="colorBluePress">#95a0d1</color>
+    <color name="colorYellow">#f1ec76</color>
+    <color name="colorYellowPress">#f5eeaf</color>
+    <color name="colorXanhNhat">#15f7d5</color>
+    <color name="colorXanhNhatPress">#bbf1eb</color>
+    <color name="colorRed">#f46e70</color>
+    <color name="colorRedPress">#f4b9b9</color>
+    <color name="colorPrimaryPress">#85ea74</color>
+    <color name="colorAccentPress">#f4b1c8</color>
+
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="background">#e5e5e5</color>
+    <color name="half_black">#808080</color>
+    <color name="white">#fafafa</color>
+    <color name="white_pressed">#f1f1f1</color>
+    <color name="pink">#e91e63</color>
+    <color name="pink_pressed">#ec407a</color>
+    <color name="blue_semi_transparent">#805677fc</color>
+    <color name="blue_semi_transparent_pressed">#80738ffe</color>
+
+    <drawable name="screen_background_holo_light">#fff3f3f3</drawable>
+    <drawable name="screen_background_holo_dark">#ff000000</drawable>
+    <color name="background_holo_dark">#ff000000</color>
+    <color name="background_holo_light">#fff3f3f3</color>
+</resources>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Fuiball</string>
+    <string name="facebook_app_id">253995678438102</string>
+    <string name="fb_login_protocol_scheme">fb253995678438102</string>
+    <string name="title_activity_danh_sach_san">DanhSachSan</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_chi_tiet_san">ChiTietSan</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_ban_do_san">Map</string>
+
+    <string name="USER_FILE">USER_FILE</string>
+    <string name="USER_ID">USER_ID</string>
+    <string name="USER_NAME">USER_NAME</string>
+    <string name="USER_LIKE">USER_LIKE</string>
+</resources>
